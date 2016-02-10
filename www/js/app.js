@@ -32,28 +32,41 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: '/search',
+  .state('app.music', {
+    url: '/music',
     views: {
       'menuContent': {
-        templateUrl: 'templates/search.html'
+        templateUrl: 'templates/music.html',
+        controller: 'MusicCtrl'
       }
     }
   })
 
-  .state('app.browse', {
-      url: '/browse',
+  .state('app.musicplayer', {
+    // url: '/musicplayer/:reports?url=',
+    // url: '/musicplayer',
+    url: '/musicplayer/:id',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/musicplayer.html',
+        controller: 'MusicPlayerCtrl'
+      }
+    }
+  })
+
+  .state('app.funda', {
+      url: '/funda',
       views: {
         'menuContent': {
-          templateUrl: 'templates/browse.html'
+          templateUrl: 'templates/funda.html'
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.countdown', {
+      url: '/countdown',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
+          templateUrl: 'templates/countdown.html',
           controller: 'PlaylistsCtrl'
         }
       }
@@ -69,5 +82,5 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/countdown');
 });
