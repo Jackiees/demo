@@ -1,0 +1,41 @@
+<ion-view view-title="Music">
+  <ion-content>
+
+  <!-- <div class="list list-inset"> -->
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <!-- ng-enter gebruiken? -->
+    <input type="text" placeholder="Search" ng-model="search.name"; my-enter="doSomething()";>
+    <!-- <input type="text" placeholder="Search" ng-model="track.name"; my-enter="doSomething()";> -->
+  </label>
+  <!-- </div> -->
+
+  <div>
+  
+  <ul class="list">
+      <li class="item" ng-repeat="track in tracks" ng-click="loadMusic($index);">
+        <img ng-src="{{track.artwork_url}}" height="30"> {{track.title}}
+      </li> 
+  </ul>
+
+</div>
+
+  <!-- {{tracks}} -->
+  
+
+<!--   <ul id="results" ng-click="loadMusic();">
+  </ul> -->
+  <!-- <ul id="player"></ul> -->
+
+   <!--  <ul class="list">
+      <li class="item" ng-click="loadMusic();">
+        <h2>Alexa Goddard</h2>
+        <h1>We Are Never Ever Getting Back Together by Taylor Swift (cover)</h1>
+      </li> -->
+<!--       <li class="item" ng-click="loadMusic('https://www.youtube.com/embed/1ulgBoXO6l0?rel=0');">
+        <h2>Alexa Goddard</h2>
+        <h1>We Are Never Ever Getting Back Together by Taylor Swift (cover)</h1>
+      </li> -->
+    <!-- </ul> -->
+  </ion-content>
+</ion-view>

@@ -1,0 +1,121 @@
+<ion-view view-title="Countdown">
+  <ion-content style="text-align:center;margin-top:20px;">
+    <h1>Days left till vacation:</h1><br/>
+    {{today}}<br/>
+    {{endDate}}<br/>
+    <h1><div id="countdown"></div></h1><br/>
+
+  <div style="margin: 0 auto;">
+  <div style="background: rgba(0, 0, 0, .1);
+      box-sizing: border-box;
+      margin: 0 auto;
+      width: 220px;">
+    <header style="overflow: clear;
+      position: relative;
+      padding-top:15px;">
+      <h2 style="font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0 0 10px;
+      text-align: center;">January-February 2016</h2>
+    </header>
+    <table class="table" style="background: #fff;
+      border-collapse: collapse;
+      color: #222;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 13px;
+      width: 100%;">
+      <tr class="td">
+        <td>M</td>
+        <td>D</td>
+        <td>W</td>
+        <td>D</td>
+        <td>V</td>
+        <td>Z</td>
+        <td>Z</td>
+      </tr>
+      <tr class="td">
+        <td class="selected">11</td>
+        <td class="selected">12</td>
+        <td class="selected">13</td>
+        <td class="selected">14</td>
+        <td class="selected">15</td>
+        <td class="selected">16</td>
+        <td class="selected">17</td>
+      </tr>
+      <tr class="td">
+        <td class="selected">18</td>
+        <td class="selected">19</td>
+        <td class="selected">20</td>
+        <td class="selected">21</td>
+        <td class="selected">22</td>
+        <td class="selected">23</td>
+        <td class="selected">24</td>
+      </tr>
+      <tr class="td">
+        <td class="selected">25</td>
+        <td class="selected">26</td>
+        <td class="selected">27</td>
+        <td class="selected">28</td>
+        <td class="selected">29</td>
+        <td class="selected">30</td>
+        <td class="selected">31</td>
+      </tr>
+      <tr class="td">
+        <td class="selected">1</td>
+        <td class="selected">2</td>
+        <td class="selected">3</td>
+        <td class="hackathon">4</td>
+        <td class="hackathon">5</td>
+        <td class="hackathon">6</td>
+        <td class="{{n7}}">7</td>
+      </tr>
+      <tr class="td">
+        <td class="{{n8}}">8</td>
+        <td class="{{n9}}">9</td>
+        <td class="{{n10}}">10</td>
+        <td class="{{n11}}">11</td>
+        <td class="{{n12}}">12</td>
+        <td class="{{n13}}">13</td>
+        <td class="{{n14}}">14</td>
+      </tr>
+      <tr class="td">
+        <td class="{{n15}}">15</td>
+        <td class="{{n16}}">16</td>
+        <td class="{{n17}}">17</td>
+        <td class="{{n18}}">18</td>
+        <td class="{{n19}}">19</td>
+        <td class="{{n20}}">20</td>
+        <td class="{{n21}}">21</td>
+      </tr>
+      <tr class="td">
+        <td class="{{n22}}">22</td>
+        <td class="{{n23}}">23</td>
+        <td class="dday">24</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="td">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+  </ion-content>
+  <!-- <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content> -->
+</ion-view>
